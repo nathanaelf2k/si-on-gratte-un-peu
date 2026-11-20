@@ -1,3 +1,10 @@
+@font-face { font-family: "Fredoka"; src: url("fonts/fredoka-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/fredoka-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/fredoka-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage-grotesque-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage-grotesque-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage-grotesque-latin-800-normal.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+
 :root {
   --paper: #F6F3EC;
   --paper-2: #E9EEF7;
@@ -210,3 +217,11 @@ h2 {
 .footer__small { font-size: 14px; color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+
+/* Page mentions légales */
+.nav__back { text-decoration: none; font-weight: 600; font-size: 15px; }
+.nav__back:hover { color: var(--blue); }
+.legal { padding-top: 120px; }
+.legal h3 { font-family: var(--display); font-weight: 600; font-size: 22px; margin: 32px 0 10px; color: var(--blue-deep); }
+.legal p { margin-bottom: 12px; }
+.footer a { color: inherit; }
