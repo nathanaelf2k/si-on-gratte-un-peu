@@ -234,3 +234,10 @@ h2 {
 .faq summary::after { content: "+"; color: var(--blue); font-size: 26px; line-height: 1; }
 .faq[open] summary::after { content: "–"; }
 .faq p { margin-top: 10px; color: var(--muted); }
+
+/* Galerie : photo principale pleine largeur */
+.gallery { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto 200px; }
+.gallery figure:first-child, .gallery figure:last-child { grid-row: auto; grid-column: auto; }
+.gallery .gallery__main { grid-column: 1 / -1; aspect-ratio: 16 / 9; background: var(--ink); }
+.gallery .gallery__main img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 700px) { .gallery { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto 110px; } .gallery figure:first-child { grid-column: 1 / -1; } }
