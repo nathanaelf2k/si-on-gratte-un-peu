@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+
+Sitemap: https://si-on-gratte-un-peu.nathanael-francisco.workers.dev/sitemap.xml
