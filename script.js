@@ -25,11 +25,11 @@ menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.globalCompositeOperation = 'source-over';
     // couche "papier" à gratter
-    ctx.fillStyle = '#F3EEE4';
+    ctx.fillStyle = '#4A63A8';
     ctx.fillRect(0, 0, width, height);
     // grain léger
     for (let i = 0; i < (width * height) / 180; i++) {
-      ctx.fillStyle = `rgba(23,22,20,${Math.random() * 0.05})`;
+      ctx.fillStyle = `rgba(255,255,255,${Math.random() * 0.06})`;
       ctx.fillRect(Math.random() * width, Math.random() * height, 1.5, 1.5);
     }
   }
