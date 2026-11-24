@@ -279,3 +279,6 @@ h2 {
 .sm-teaser p { color: #E9EEF7; }
 .sm-teaser .btn { background: var(--yellow); color: var(--blue-deep); border-color: var(--yellow); justify-self: start; }
 @media (max-width: 700px) { .sm-teaser { grid-template-columns: 1fr; } .sm-cards { grid-template-columns: 1fr; } }
+
+.card__link { display: inline-block; margin-top: 6px; font-size: 14px; font-weight: 700; color: var(--blue); text-decoration: none; }
+.card__link:hover { text-decoration: underline; }
