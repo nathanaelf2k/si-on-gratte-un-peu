@@ -282,3 +282,17 @@ h2 {
 
 .card__link { display: inline-block; margin-top: 6px; font-size: 14px; font-weight: 700; color: var(--blue); text-decoration: none; }
 .card__link:hover { text-decoration: underline; }
+
+/* Espacements (retours mobile) */
+p + .btn, p + .btn-row, .lead + .btn, ul + .btn, .checklist + .btn { margin-top: 22px; }
+.center .btn { margin-top: 22px; }
+.sm-teaser-wrap { padding-top: 60px; padding-bottom: 48px; }
+.sm-tag--hors { background: #EAF0FB; color: var(--muted); }
+@media (max-width: 700px) { .sm-teaser { padding: 26px; } .section { padding-left: 20px; padding-right: 20px; } }
+/* Mobile : cartes des voix sur une colonne, étiquettes compactes */
+.dates .tag { justify-self: start; }
+@media (max-width: 560px) {
+  .cards { grid-template-columns: 1fr; gap: 32px; }
+  .card__img { aspect-ratio: 4 / 3; }
+  .card h3 { font-size: 26px; }
+}
