@@ -250,3 +250,32 @@ h2 {
 .quote:nth-child(3n+2) { background: #FBF9D9; }
 .quote blockquote { font-family: var(--display); font-weight: 500; font-size: 20px; line-height: 1.35; color: var(--ink); }
 .quote figcaption { margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--blue); }
+
+/* Page santé mentale */
+.sm-hero { padding: 130px 24px 40px; }
+.sm-hero h1 { font-family: var(--display); font-weight: 600; font-size: clamp(36px, 6vw, 64px); line-height: 1.02; margin-bottom: 24px; color: var(--blue-deep); }
+.sm-hero p { margin-bottom: 16px; }
+.sm-urgent { background: var(--blue-deep); color: #fff; border-radius: var(--radius); padding: 28px; margin: 10px 0 40px; }
+.sm-urgent h2 { font-size: 26px; margin-bottom: 14px; color: var(--yellow); }
+.sm-urgent ul { list-style: none; }
+.sm-urgent li { padding: 8px 0; border-top: 1px solid rgba(255,255,255,.15); }
+.sm-urgent a { color: var(--yellow); text-decoration: none; }
+.sm-toc { padding: 0 24px 30px; }
+.sm-toc ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.sm-toc a { display: inline-block; text-decoration: none; font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 99px; background: var(--paper-2); }
+.sm-toc a:hover { background: var(--blue); color: #fff; }
+.sm-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 22px; align-items: start; padding: 10px 24px 80px; }
+.sm-card { background: #fff; border-radius: var(--radius); padding: 26px; border: 1.5px solid #E2E6F0; scroll-margin-top: 90px; }
+.sm-card h2 { font-size: 26px; margin-bottom: 8px; color: var(--blue-deep); }
+.sm-card p { margin-bottom: 12px; font-size: 17px; }
+.sm-tag { display: inline-block; font-size: 13px !important; font-weight: 700; color: var(--blue-deep); background: #FBF9D9; padding: 3px 10px; border-radius: 6px; }
+.sm-more { font-size: 15px !important; color: var(--muted); border-top: 1px solid #E2E6F0; padding-top: 12px; margin-top: 4px; }
+.sm-small { font-size: 14px; color: var(--muted); margin-top: 16px; }
+.section--blue .checklist a { color: var(--yellow); }
+#aide, #diois, #ecouter { scroll-margin-top: 70px; }
+/* Teaser accueil */
+.sm-teaser { background: var(--blue-deep); color: #fff; border-radius: var(--radius); padding: 34px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+.sm-teaser h2 { color: #fff; margin-bottom: 12px; }
+.sm-teaser p { color: #E9EEF7; }
+.sm-teaser .btn { background: var(--yellow); color: var(--blue-deep); border-color: var(--yellow); justify-self: start; }
+@media (max-width: 700px) { .sm-teaser { grid-template-columns: 1fr; } .sm-cards { grid-template-columns: 1fr; } }
