@@ -321,3 +321,25 @@ p + .btn, p + .btn-row, .lead + .btn, ul + .btn, .checklist + .btn { margin-top:
 .ej-h3 { font-family: var(--display); font-size: 22px; color: var(--blue-deep); margin: 26px 0 8px; }
 
 .sm .section p + p { margin-top: 14px; }
+
+/* Fiches santé mentale repliables */
+details.sm-card { padding: 0; }
+details.sm-card summary { list-style: none; cursor: pointer; padding: 22px 64px 22px 26px; position: relative; }
+details.sm-card summary::-webkit-details-marker { display: none; }
+details.sm-card summary h2 { margin-bottom: 8px; }
+details.sm-card summary .sm-tag { margin-bottom: 0; }
+.sm-open { position: absolute; top: 22px; right: 22px; width: 32px; height: 32px; border-radius: 50%; background: var(--paper-2); }
+.sm-open::before, .sm-open::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2.5px; border-radius: 2px; background: var(--blue-deep); transform: translate(-50%, -50%); transition: transform .2s; }
+.sm-open::after { transform: translate(-50%, -50%) rotate(90deg); }
+details.sm-card[open] .sm-open::after { transform: translate(-50%, -50%) rotate(0deg); }
+details.sm-card summary:hover .sm-open { background: var(--yellow); }
+details.sm-card summary:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: var(--radius); }
+details.sm-card[open] { border-color: var(--blue); }
+.sm-body { padding: 0 26px 22px; }
+.sm-body > p:first-child { margin-top: 4px; }
+.sm-toc__k2 { margin-top: 18px; }
+.sm-toc__agir a { background: #FBF9D9; }
+.sm-all { margin-top: 16px; background: none; border: 1.5px solid var(--blue-deep); color: var(--blue-deep); border-radius: 99px; padding: 7px 16px; font: 600 14px var(--body); cursor: pointer; }
+.sm-all:hover { background: var(--blue-deep); color: #fff; }
+@media (max-width: 700px) { details.sm-card summary { padding: 18px 58px 18px 20px; } .sm-open { top: 18px; right: 16px; } .sm-body { padding: 0 20px 18px; } details.sm-card summary h2 { font-size: 22px; } }
+@media print { .sm-open, .sm-all { display: none; } }
